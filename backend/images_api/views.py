@@ -14,6 +14,8 @@ from .serializers import (
     ProductSerializer
 )
 
+from .tasks import process_invoice
+
 
 class CompanyViewSet(viewsets.ModelViewSet):
 
@@ -31,6 +33,10 @@ class InvoiceViewSet(viewsets.ModelViewSet):
 
     queryset = Invoice.objects.all()
     serializer_class = InvoiceSerializer
+
+    def perform_create(self, serializer):
+        invoice = serializer.save()
+        process_invoice.delay(invoice.id)
 
 
 class ProductViewSet(viewsets.ModelViewSet):

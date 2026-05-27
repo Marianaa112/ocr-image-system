@@ -1,0 +1,21 @@
+# Django
+Django==5.2.1
+djangorestframework==3.16.0
+python-dotenv==1.1.0
+
+# Database
+mysqlclient==2.2.7
+
+# Celery + Redis
+celery==5.5.2
+redis==6.2.0
+
+# Image processing
+opencv-python==4.11.0.86
+Pillow==11.2.1
+
+# OCR
+pytesseract==0.3.13
+
+# CORS
+django-cors-headers==4.7.0
