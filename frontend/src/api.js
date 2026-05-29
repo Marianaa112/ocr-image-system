@@ -7,7 +7,7 @@ export const api = {
     form.append("image", imageFile);
 
     // IDs reales de Django
-    form.append("company", 2);
+    form.append("company", 1);
     form.append("client", 1);
 
     const res = await fetch(`${API_BASE}/invoices/`, {
