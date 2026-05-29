@@ -14,6 +14,8 @@ Sistema de facturación que extrae texto de fotos de tickets con OpenCV + Tesser
 - **Frontend**: React 18 (Babel standalone, sin build)
 
 ---
+## **VIDEO DEL PROYECTO:**
+[Proyecto Django + Celery](https://youtu.be/-g0yR4gDghw?si=uC6pKiXY5GSj2VD1)
 
 ## 1. Requisitos del sistema
 
