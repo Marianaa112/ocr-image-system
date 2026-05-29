@@ -173,16 +173,12 @@ celery -A config worker --loglevel=info --pool=solo
 
 ### Terminal 4 — desde la carpeta `frontend/`
 
-**macOS / Linux**
-```bash
-cd frontend
-python3 -m http.server 3000
-```
 
-**Windows**
+**Windows / macOS / Linux**
 ```cmd
 cd frontend
-python -m http.server 3000
+npm install
+npm run dev
 ```
 
 Abre en el navegador:
@@ -327,8 +323,13 @@ ocr-image-system/
 | GET/POST | `/api/products/` | CRUD productos por invoice |
 
 ---
+## 10. Probar tests
+Para ejecutar las pruebas de django se necesita estar dentro de la carpeta backend con el entrono virtual encendido y ejecutar el siguiente comando:
+```cmd
+python manage.py test
+```
 
-## 10. Solución de problemas
+## 11. Solución de problemas
 
 **`mysqlclient` no compila en Windows**
 ```cmd
